@@ -13,7 +13,7 @@ export default function Hero() {
     <>
       {/* Main Jumbotron */}
       <Jumbotron
-        backgroundImage="/images/landing/LandingPage.png"
+        backgroundImage="/images/landing/optimized/LandingPage.jpg"
         title="कृषि खाते सेवक सहकारी पतसंस्था मर्या, धुळे"
         subtitle="शेतकऱ्यांच्या आर्थिक सशक्तीकरणासाठी आणि ग्रामीण विकासासाठी समर्पित"
         height="xl"

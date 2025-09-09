@@ -48,11 +48,12 @@ export default function Jumbotron({
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
         <Image
-          src={backgroundImage}
+          src={backgroundImage.startsWith('/') ? backgroundImage : `/${backgroundImage}`}
           alt={title}
           fill
           className="object-cover"
           priority
+          unoptimized={process.env.NODE_ENV === 'development'}
         />
         {/* Blur Effect Overlay */}
         <div className="absolute inset-0 backdrop-blur-[2px]"></div>
